@@ -1,0 +1,30 @@
+.head{
+    background-color: yellow;
+    height: 5rem;
+    width: 100vw;
+    text-align: center;
+    font-size: 2rem;
+}   
+
+.btn{
+    text-decoration: none;
+    position: relative;
+    top: 2vw;
+    padding-right: 1rem;
+}
+
+.main{
+    text-align: center;
+}
+
+.main input{
+    width: 20rem;
+    height: 4vh;
+    border-radius: 10px;
+}
+
+.main button{
+    height: 5vh;
+    border-radius: 10px;
+    
+}
