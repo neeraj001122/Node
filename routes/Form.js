@@ -1,15 +1,13 @@
 const express = require('express');
-const path = require('path')
+
 
 const router = express.Router();
 
-router.use("/contactus" ,(req,res,next) => {
-    res.sendFile(path.join(__dirname ,'../' ,'views' ,'contactUs.html'));
-});
+const form = require('../controller/contactFormController')
 
-router.use("/success" , (req,res,next) => {
-    res.send('<h1>Form submitted succesfully<h1/>')
-})
+router.use("/contactus" ,form.showForm);
+
+router.use("/success" ,form.submitSuccessfull)
 
 
 module.exports = router;
